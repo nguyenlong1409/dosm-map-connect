@@ -1,4 +1,7 @@
 export const Routers = {
-  OLConnect: { path: "/map/open-layer" },
-  LeafletConnect: { path: "/map/leaflet" },
+  MainPageURL: { path: "/" },
+
+  OLConnectURL: { path: "/map/open-layer" },
+  LeafletConnectURL: { path: "/map/leaflet" },
+  EsriConnectURL: { path: "/map/esri" },
 };

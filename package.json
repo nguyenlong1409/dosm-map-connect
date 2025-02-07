@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@arcgis/core": "^4.31.6",
     "cra-template": "1.2.0",
     "esri-leaflet": "^3.0.14",
     "leaflet": "^1.9.4",

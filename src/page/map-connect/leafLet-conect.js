@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import L from "leaflet";
 import { tiledMapLayer } from "esri-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -33,12 +33,22 @@ const LeafletConnect = () => {
       maxZoom: 19,
     });
 
-    arcgisLayer.addTo(map);
+    wmsLayer.addTo(map);
 
     return () => map.remove();
   }, []);
 
-  return <div id="map" style={{ height: "100%", width: "100%" }} />;
+  return (
+    <>
+      <div style={{ height: "100%", width: "100%" }}>
+        <h3 style={{ height: "5%", width: "100%" }}>Kết nối bằng LEAFLET</h3>
+        <div
+          id="map"
+          style={{ height: "90%", width: "100%", display: "center" }}
+        />
+      </div>
+    </>
+  );
 };
 
 export default LeafletConnect;

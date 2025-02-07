@@ -46,7 +46,7 @@ const OpenLayerConnect = () => {
         maxZoom: 16,
         minZoom: 6,
       }),
-      layers: [wmsLayer],
+      layers: [xyzLayer],
     });
 
     return () => {
@@ -56,13 +56,13 @@ const OpenLayerConnect = () => {
 
   return (
     <>
-      <div
-        id="map"
-        style={{
-          width: "100%",
-          height: "100%",
-        }}
-      ></div>
+      <div style={{ height: "100%", width: "100%" }}>
+        <h3 style={{ height: "5%", width: "100%" }}>Kết nối bằng OpenLayer</h3>
+        <div
+          id="map"
+          style={{ height: "90%", width: "100%", display: "center" }}
+        />
+      </div>
     </>
   );
 };

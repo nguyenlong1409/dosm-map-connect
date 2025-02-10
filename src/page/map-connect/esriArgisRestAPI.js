@@ -18,8 +18,8 @@ const EsriApiConnect = () => {
       container: "map",
       map: map,
       center: [106, 16],
-      zoom: 6,
-      minZoom: 5,
+      zoom: 8,
+      minZoom: 6,
       maxZoom: 18,
     });
 
@@ -57,7 +57,9 @@ const EsriApiConnect = () => {
   return (
     <>
       <div style={{ height: "100%", width: "100%" }}>
-        <h3 style={{ height: "5%", width: "100%" }}>Kết nối bằng EsriApi</h3>
+        <h3 style={{ height: "5%", width: "100%" }}>
+          Kết nối bằng thư viện của Esri
+        </h3>
         <div
           id="map"
           style={{ height: "90%", width: "100%", display: "center" }}

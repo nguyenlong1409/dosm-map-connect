@@ -23,7 +23,6 @@ const OpenLayerConnect = () => {
       source: new XYZ({
         url: XYZ_URL,
         attributions: '&copy; <a href="https://dosm.vnsdi.gov.vn">VNSDI</a>',
-        maxZoom: 18,
       }),
     });
 
@@ -43,7 +42,7 @@ const OpenLayerConnect = () => {
       view: new View({
         center: fromLonLat([105.8542, 21.0285]),
         zoom: 6,
-        maxZoom: 16,
+        maxZoom: 18,
         minZoom: 6,
       }),
       layers: [xyzLayer],

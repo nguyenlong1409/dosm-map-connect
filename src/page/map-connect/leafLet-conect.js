@@ -16,13 +16,13 @@ const LeafletConnect = () => {
     const arcgisLayer = tiledMapLayer({
       url: ArcGISRestApi_URL,
       minZoom: 6,
-      maxZoom: 19,
+      maxZoom: 18,
     });
 
     const xyzLayer = L.tileLayer(XYZ_URL, {
       attribution: '&copy; <a href="https://dosm.vnsdi.gov.vn">VNSDI</a>',
       minZoom: 6,
-      maxZoom: 19,
+      maxZoom: 18,
     });
 
     const wmsLayer = L.tileLayer.wms(WMS_URL, {
@@ -30,10 +30,10 @@ const LeafletConnect = () => {
       format: "image/png",
       transparent: true,
       minZoom: 6,
-      maxZoom: 19,
+      maxZoom: 18,
     });
 
-    wmsLayer.addTo(map);
+    arcgisLayer.addTo(map);
 
     return () => map.remove();
   }, []);
